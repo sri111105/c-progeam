@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int k=n;
+    int l = 0; 
+    while (n != 0) {
+        int k = n % 10;  
+        l = l * 10 + k;  
+        n = n / 10;      
+    }
+    cout << l;
+    
+    if(k==l)
+    {
+        cout << " yes palindrome";
+    }
+    else
+    {
+        cout << " not a palindrome";
+    }
+}
